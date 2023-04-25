@@ -1,3 +1,7 @@
+ingressRoute:
+  dashboard:
+    enabled: true
+    domain: "dashboard.example.com"
 additionalArguments:
   - "--providers.kubernetescrd"
   - "--providers.kubernetesingress"
