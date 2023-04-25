@@ -51,8 +51,7 @@ done
 # Source the .bashrc file to make the environment variables available immediately
 source ~/.bashrc
 
-chmod +x ./mircok8s/setup.sh
-sh ./mircok8s/setup.sh
+sh ./microk8s/setup.sh
 
 # Bootstrap flux
 flux bootstrap github \
