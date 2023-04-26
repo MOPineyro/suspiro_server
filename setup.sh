@@ -15,7 +15,7 @@ sudo snap install microk8s --classic
 
 # Install flux for GitOps
 curl -s https://fluxcd.io/install.sh | sudo bash
-sh ./setup/add_env_vars.sh
+sh ./util/yaml_vars.sh env_vars.yaml
 sh ./microk8s/setup.sh
 
 # Bootstrap flux
