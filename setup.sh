@@ -44,7 +44,7 @@ add_env_var() {
 }
 
 # Read environment variables from the YAML file and add them to ~/.bashrc
-yq eval '. as $o ireduce ({}; . * $o)' "$YAML_FILE" | while IFS="=" read -r env_var_name env_var_value; do
+yq eval '. as $o ireduce ({}; . * $o)' "$YAML_FILE" | sed 's/.$//' | while IFS="=" read -r env_var_name env_var_value; do
   add_env_var "$env_var_name" "$env_var_value"
 done
 
