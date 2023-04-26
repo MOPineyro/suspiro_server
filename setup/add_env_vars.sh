@@ -3,11 +3,11 @@
 # Install yq
 sudo snap install yq
 
-# Check if the yq command is available
-if ! command -v yq &> /dev/null; then
-  echo "Error: yq is not installed. Install it using 'sudo snap install yq'"
-  exit 1
-fi
+# # Check if the yq command is available
+# if ! command -v yq &> /dev/null; then
+#   echo "Error: yq is not installed. Install it using 'sudo snap install yq'"
+#   exit 1
+# fi
 
 # Define the YAML file containing the environment variables
 YAML_FILE="../env_vars.yaml"
